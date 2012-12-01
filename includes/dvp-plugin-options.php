@@ -26,10 +26,29 @@ function dvp_options_page() {
 	 
 	 <p> <label class="description" for="dvp_settings[paypal_id]"> <?php _e('Enter Your Paypal Email id on which you want to recieve donations','dvp_email')?> </label>
 	 
-	 <input id="dvp_settings[paypal_id]" name="dvp_settings[paypal_id]" type="email" value="<?php echo $dvp_options['paypal_id'] ?>" />
+	 <input id="dvp_settings[paypal_id]" name="dvp_settings[paypal_id]" type="email" value="<?php echo $dvp_options['paypal_id'] ?>" /> <br />
+	 
+	 
+	 
+	 
+	 <tr>
+		<center><td><b><?php _e('Where you want to display paypal donation banner ?','dvp_display_options') ?></b></td> </center>
+		<td><br />  <center>
+<label class="checkbox" for="dvp_settings[dvp_display_options]" > </label>
+ <b>Posts</b><input type="radio" id="dvp_settings[dvp_display_options]" value="1" name="dvp_settings[dvp_display_options]" /><br/> 
+<b>Pages</b><input type="radio" id="dvp_settings[dvp_display_options]" value ="2" name="dvp_settings[dvp_display_options]"/> <br/>
+ <b>Posts and Pages</b><input type="radio" value ="3" name="dvp_settings[dvp_display_options]"/>
+ <br /><b>Don't display it </b><input type="radio" value ="4" name="dvp_settings[dvp_display_options]"/> </center>
+ 
+             </td>
+	</tr>
+						
+						
+	 <br /><center><input type="submit" value="Update options" class="primary-button" /></center> </br />
+     </form>
 	 </p>
 	 <p class="submit">
-	 <input type="submit" class="button-primary" value="<?php _e('save options','dvp_email') ?>" />
+	
 	 </p>
 	 
 	 </form>

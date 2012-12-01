@@ -4,8 +4,16 @@
 *************************************************************/
 function dvp_add_content($content) {
 global $dvp_options;
+if ($dvp_options['dvp_display_options'] == 1 ) {
+$content_type=is_single(); 
+} elseif ($dvp_options['dvp_display_options'] == 2 ) {
+$content_type=is_page(); 
+} elseif ($dvp_options['dvp_display_options'] == 3 ) {
+$content_type=is_singular(); }
 
-if (is_single()) {
+
+
+if ($content_type) {
 
 $extra_content= '
 <div align="center"><form method="post" action="https://www.paypal.com/cgi-bin/webscr">
