@@ -85,7 +85,15 @@ Posts and Pages<input type="radio"  id="dvp_settings[dvp_display_options]" value
 	 
 	 add_action ('admin_init','dvp_register_settings');
 	 
-	 
+	 function dvp_plugin_action_links( $links, $file ) {
+	if ( $file == plugin_basename( dirname(__FILE__).'/donate-via-paypal.php' ) ) {
+		$links[] = '<a href="admin.php?page=dvp-options">'.__('Settings').'</a>';
+	}
+
+	return $links;
+}
+
+add_filter( 'plugin_action_links', 'dvp_plugin_action_links', 10, 2 );
 	 
 	 
 ?>
