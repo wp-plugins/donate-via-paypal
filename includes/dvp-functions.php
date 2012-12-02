@@ -16,6 +16,8 @@ $content_type=is_singular(); }
 if ($content_type) {
 
 $extra_content= '
+
+<center><b>' . $dvp_options['paypal_widget_textarea'] . ' </b></center>
 <div align="center"><form method="post" action="https://www.paypal.com/cgi-bin/webscr">
 <div class="paypal-donations">
 <input type="hidden" value="_donations" name="cmd"/>

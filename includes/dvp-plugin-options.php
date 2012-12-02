@@ -28,6 +28,10 @@ function dvp_options_page() {
 	 
 	 <input id="dvp_settings[paypal_id]" name="dvp_settings[paypal_id]" type="email" value="<?php echo $dvp_options['paypal_id'] ?>" /> <br />
 	 
+	 <p> <label class="description" for="dvp_settings[paypal_widget_textarea]"> <?php _e('Enter the text you want to display above donation banner','paypal_widget_text')?> </label> <br />
+	 
+	 <textarea id="dvp_settings[paypal_widget_textarea]" name="dvp_settings[paypal_widget_textarea]" type="text" value="<?php echo $dvp_options['paypal_widget_textarea'] ?>" cols=30 rows=04> <?php echo $dvp_options['paypal_widget_textarea'] ?>  </textarea> <br />
+	 
 	 <?php
 	 
 	 if ($dvp_options[dvp_display_options] == 1 ) 
@@ -36,13 +40,13 @@ function dvp_options_page() {
 	 { $ppdonate3_checked_status ='checked';} elseif ($dvp_options[dvp_display_options] == 4 ) 
 	 { $ppdonate4_checked_status ='checked';} ?>
 	 <tr>
-		<center><td><b><?php _e('Where you want to display paypal donation banner ?','dvp_display_options') ?></b></td> </center>
-		<td><br />  <center>
+		<td><b><?php _e('Where you want to display paypal donation banner ?','dvp_display_options') ?></b></td> </center>
+		<td><br />  
 <label class="checkbox" for="dvp_settings[dvp_display_options]" > </label>
- <b>Posts</b><input type="radio" id="dvp_settings[dvp_display_options]" value="1" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate1_checked_status?>/><br/> 
-<b>Pages</b><input type="radio" id="dvp_settings[dvp_display_options]" value ="2" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate2_checked_status?>/> <br/>
- <b>Posts and Pages</b><input type="radio"  id="dvp_settings[dvp_display_options]" value ="3" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate3_checked_status?>/>
- <br /><b>Don't display it </b><input type="radio" id="dvp_settings[dvp_display_options]" value ="4" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate4_checked_status?> /> </center>
+ Posts<input type="radio" id="dvp_settings[dvp_display_options]" value="1" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate1_checked_status?>/><br/> 
+Pages<input type="radio" id="dvp_settings[dvp_display_options]" value ="2" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate2_checked_status?>/> <br/>
+Posts and Pages<input type="radio"  id="dvp_settings[dvp_display_options]" value ="3" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate3_checked_status?>/>
+ <br />Don't display it<input type="radio" id="dvp_settings[dvp_display_options]" value ="4" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate4_checked_status?> /> 
  
              </td>
 	</tr>
