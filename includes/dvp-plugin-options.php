@@ -28,17 +28,21 @@ function dvp_options_page() {
 	 
 	 <input id="dvp_settings[paypal_id]" name="dvp_settings[paypal_id]" type="email" value="<?php echo $dvp_options['paypal_id'] ?>" /> <br />
 	 
+	 <?php
 	 
-	 
-	 
+	 if ($dvp_options[dvp_display_options] == 1 ) 
+	 { $ppdonate1_checked_status ='checked';} elseif ($dvp_options[dvp_display_options] == 2 ) 
+	 { $ppdonate2_checked_status ='checked';} elseif ($dvp_options[dvp_display_options] == 3 ) 
+	 { $ppdonate3_checked_status ='checked';} elseif ($dvp_options[dvp_display_options] == 4 ) 
+	 { $ppdonate4_checked_status ='checked';} ?>
 	 <tr>
 		<center><td><b><?php _e('Where you want to display paypal donation banner ?','dvp_display_options') ?></b></td> </center>
 		<td><br />  <center>
 <label class="checkbox" for="dvp_settings[dvp_display_options]" > </label>
- <b>Posts</b><input type="radio" id="dvp_settings[dvp_display_options]" value="1" name="dvp_settings[dvp_display_options]" /><br/> 
-<b>Pages</b><input type="radio" id="dvp_settings[dvp_display_options]" value ="2" name="dvp_settings[dvp_display_options]"/> <br/>
- <b>Posts and Pages</b><input type="radio" value ="3" name="dvp_settings[dvp_display_options]"/>
- <br /><b>Don't display it </b><input type="radio" value ="4" name="dvp_settings[dvp_display_options]"/> </center>
+ <b>Posts</b><input type="radio" id="dvp_settings[dvp_display_options]" value="1" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate1_checked_status?>/><br/> 
+<b>Pages</b><input type="radio" id="dvp_settings[dvp_display_options]" value ="2" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate2_checked_status?>/> <br/>
+ <b>Posts and Pages</b><input type="radio"  id="dvp_settings[dvp_display_options]" value ="3" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate3_checked_status?>/>
+ <br /><b>Don't display it </b><input type="radio" id="dvp_settings[dvp_display_options]" value ="4" name="dvp_settings[dvp_display_options]" <?php echo $ppdonate4_checked_status?> /> </center>
  
              </td>
 	</tr>
