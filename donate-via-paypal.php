@@ -3,9 +3,9 @@
 Plugin Name: Donate via paypal
 Plugin URI: http://phppoet.com/donate-via-paypal-wordpress-plugin/
 Description: A wordpress plugins to add paypal donation button after each post content . It has been developed for not profiting organizations . 
-Version: 1.1.5
+Version: 1.1.6
 Author: Parbat patel
-Author URI: http://coding.fastanswers.net
+Author URI: http://phppoet.com
 Author admin@fastanswers.net
 License: GPLv2
 */
