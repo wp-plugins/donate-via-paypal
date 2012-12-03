@@ -2,7 +2,7 @@
 Contributors: parbat patel
 Author URI: http://phppoet.com/
 Tags: donate , via , paypal ,donation , plugin , after , post , content
-Stable tag:1.1.5
+Stable tag:1.1.6
 
 == Description  ==
 A wordpress plugins to add paypal donation button after each post content . 
