@@ -1,8 +1,8 @@
 === donate via paypal ===
 Contributors: parbat patel
-Author URI: http://coding.fastanswers.net/
+Author URI: http://phppoet.com/
 Tags: donate , via , paypal ,donation , plugin , after , post , content
-Stable tag:1.1.4
+Stable tag:1.1.5
 
 == Description  ==
 A wordpress plugins to add paypal donation button after each post content . 
