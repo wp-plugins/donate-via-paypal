@@ -130,6 +130,10 @@ Posts and Pages<input type="radio"  id="dvp_settings[dvp_display_options]" value
 <input type="hidden" value="USD" name="currency_code"/>
 <input type="image" alt="PayPal – The safer, easier way to pay online." name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif"/><img width="1" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" alt=""/></div></form></div>
 	 </div>
+	 
+	  <br />
+<center><a href="http://www.wpquestions.com/affiliates/register/name/phppoet">
+<img src="http://www.wpquestions.com/images/ad-affiliate-125.png" alt="WP Questions"></a></center>
 	 <?php
 	 
 	 echo ob_get_clean();
