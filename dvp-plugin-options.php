@@ -132,8 +132,7 @@ Posts and Pages<input type="radio"  id="dvp_settings[dvp_display_options]" value
 	 </div>
 	 
 	  <br />
-<center><a href="http://www.wpquestions.com/affiliates/register/name/phppoet">
-<img src="http://www.wpquestions.com/images/ad-affiliate-125.png" alt="WP Questions"></a></center>
+
 	 <?php
 	 
 	 echo ob_get_clean();
